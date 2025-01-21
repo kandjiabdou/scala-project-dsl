@@ -5,6 +5,7 @@ ThisBuild / scalaVersion := "3.3.4"
 lazy val root = (project in file("."))
   .settings(
     name := "MatrixDSL",
+
     libraryDependencies ++= Seq(
       "org.scalatest" %% "scalatest" % "3.2.17" % Test
     )
