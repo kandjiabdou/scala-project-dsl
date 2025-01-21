@@ -191,7 +191,7 @@ MatrixDSL/
 
 Ensure you have sbt installed on your machine. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/MatrixDSL.git
+git clone https://github.com/kandjiabdou/scala-project-dsl.git
 ```
 Enter the project directory and run:
 ```bash
