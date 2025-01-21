@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MatrixDSL.iml" filepath="$PROJECT_DIR$/.idea/modules/MatrixDSL.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MatrixDSL-build.iml" filepath="$PROJECT_DIR$/.idea/modules/MatrixDSL-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MatrixDSL.MatrixDSL-build.iml" filepath="$PROJECT_DIR$/.idea/modules/MatrixDSL.MatrixDSL-build.iml" />
     </modules>
   </component>
 </project>
