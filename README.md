@@ -1,85 +1,82 @@
-# **Matrix DSL in Scala 3**  
-A **Functional Programming** and **DSL** Project  
+# 🌐 Matrix DSL in Scala 3
+
+**🚀 A Functional Programming and DSL Project**
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Scala-DC3220?style=for-the-badge&logo=scala&logoColor=white" alt="Scala">
+  <img src="https://img.shields.io/badge/sbt-00875A?style=for-the-badge&logo=sbt&logoColor=white" alt="sbt">
+</p>
 
 ---
 
-## **Table of Contents**  
-1. [Project Overview](#project-overview)  
-2. [Domain Justification](#domain-justification)  
-3. [DSL Design and Functional Principles](#dsl-design-and-functional-principles)  
-4. [Features](#features)  
-5. [Usage Examples](#usage-examples)  
-    
-   - [Basic Arithmetic Operations](#basic-arithmetic-operations)
-   -  [Creating a Matrix](#creating-a-matrix) 
-   - [Row Echelon Form (RREF)](#row-echelon-form-rref)  
-   - [Matrix Inversion](#matrix-inversion)  
-   - [Other Operations](#other-operations)  
-6. [Testing](#testing)  
-7. [Project Structure & Build Instructions](#project-structure--build-instructions)  
- 
+## 📖 Table of Contents
+1. 🌟 [Project Overview](#project-overview)
+2. 🔍 [Domain Justification](#domain-justification)
+3. 🎨 [DSL Design and Functional Principles](#dsl-design-and-functional-principles)
+4. ✨ [Features](#features)
+5. 🧑‍💻 [Usage Examples](#usage-examples)
+   - ➕ [Basic Arithmetic Operations](#basic-arithmetic-operations)
+   - 🧱 [Creating a Matrix](#creating-a-matrix)
+   - 📉 [Row Echelon Form (RREF)](#row-echelon-form-rref)
+   - 🔁 [Matrix Inversion](#matrix-inversion)
+   - 🔄 [Other Operations](#other-operations)
+6. 🧪 [Testing](#testing)
+7. 📚 [Project Structure & Build Instructions](#project-structure--build-instructions)
 
 ---
 
-## **Project Overview**  
-This project implements a **Matrix DSL** in Scala 3, inspired by the final project requirement from the **Functional Programming in Scala 3 - Building a DSL** curriculum. The primary goal is to showcase functional programming principles through **immutable**, **type-safe**, and **composable** matrix operations.
+## 🌟 Project Overview
+This project implements a **Matrix DSL** in Scala 3, designed to demonstrate the power of functional programming through **immutable**, **type-safe**, and **composable** matrix operations.
 
-### **Goals**  
-- Provide a **clean**, **declarative** API for matrix operations.  
-- Demonstrate **functional programming** best practices (immutability, pure functions, expressive types).  
-- Offer a DSL that makes matrix manipulation **intuitive** and **concise**.  
-
----
-
-## **Domain Justification**  
-**Linear Algebra** is a crucial domain in mathematics and software engineering. It underpins fields such as **machine learning**, **computer graphics**, **engineering simulations**, and more. A **DSL** for matrix operations can significantly simplify expressing complex transformations, such as matrix multiplications, solving systems of linear equations, and computing inverses—all in a **readable, high-level** manner.  
-
-By designing an internal DSL in Scala 3, we harness:
-- **Expressive Syntax**: Clear and concise mathematical operations.  
-- **Strong Typing**: Ensures operations remain correct and safe.  
-- **Functional Paradigms**: Guarantees immutability and composability.  
+### Goals
+- 🧼 Provide a **clean**, **declarative** API for matrix operations.
+- 🔄 Demonstrate **functional programming** best practices.
+- 🧩 Offer a DSL that makes matrix manipulation both **intuitive** and **concise**.
 
 ---
 
-## **DSL Design and Functional Principles**  
-1. **Immutable Data Structures**  
-   - All matrix operations return new `Matrix` instances rather than mutating existing ones.  
+## 🔍 Domain Justification
+**Linear Algebra** is foundational across various fields such as **machine learning**, **computer graphics**, and more. A **DSL** for matrix operations simplifies expressing complex transformations.
 
-2. **Pure Functions**  
-   - Matrix methods do not produce side effects; they always return the result of the operation on the input matrix.  
-
-3. **Composability**  
-   - Methods can be chained or composed, allowing operations like `(A + B).rref` or `A.rotateN(2).invert` to be easily expressed.  
-
-4. **Scala 3 Enhancements**  
-   - Leverage concise syntax, pattern matching, and advanced type features where appropriate.  
+### Benefits
+- 📝 **Expressive Syntax**: Clear and concise operations.
+- 🛡️ **Strong Typing**: Ensures operational correctness and safety.
+- 🔄 **Functional Paradigms**: Supports immutability and composability.
 
 ---
 
-## **Features**  
-- **Matrix Creation**  
-  Create matrices from two-dimensional `Vector` structures.  
-- **Addition, Subtraction, Multiplication**  
-  Standard arithmetic operations with enforced dimension checks.  
-- **Rotation**  
-  Rotate a matrix by 90-degree increments (`rotate90`) or by any multiple of 90° (`rotateN`).  
-- **RREF (Reduced Row Echelon Form)**  
-  Implement a standard algorithm to transform a matrix into its RREF.  
-- **Inversion**  
-  Compute the inverse of a square matrix, if it exists.  
-- **Transpose**  
-  Swap rows and columns of a matrix.  
-- **Determinant**  
-  Recursively compute determinant values for NxN matrices.  
-- **Trace**  
-  Sum the main diagonal for square matrices.  
+## 🎨 DSL Design and Functional Principles
+1. 🔒 **Immutable Data Structures**
+   - All operations return new `Matrix` instances.
+2. 🚫 **Pure Functions**
+   - Methods return results without side effects.
+3. 🔗 **Composability**
+   - Easy chaining or composition of operations.
 
 ---
 
-## **Usage Examples**  
+## ✨ Features
+- 🏗️ **Matrix Creation**  
+  Create matrices from two-dimensional `Vector` structures.
+- ➕➖✖️ **Addition, Subtraction, Multiplication**  
+  Standard arithmetic operations with enforced dimension checks.
+- 🔄 **Rotation**  
+  Rotate a matrix by 90-degree increments (`rotate90`) or by any multiple of 90° (`rotateN`).
+- 📐 **RREF (Reduced Row Echelon Form)**  
+  Implement a standard algorithm to transform a matrix into its RREF.
+- 🔁 **Inversion**  
+  Compute the inverse of a square matrix, if it exists.
+- 🔀 **Transpose**  
+  Swap rows and columns of a matrix.
+- 🔢 **Determinant**  
+  Recursively compute determinant values for NxN matrices.
+- 🔎 **Trace**  
+  Sum the main diagonal for square matrices.
 
+---
+
+## 🧑‍💻 Usage Examples
 ### **Basic Arithmetic Operations**
-
 ```scala
 val matA = Matrix(Vector(
   Vector(1, 2),
@@ -169,14 +166,15 @@ val detE = matE.determinant // => (1*4) - (2*3) = -2
 // Trace of a matrix (sum of diagonal elements)
 val traceE = matE.trace // => 1 + 4 = 5
 ```
-### Testing
-```bash
-// Run tests:
-Navigate to the project root in your terminal.
-Use sbt test to execute all tests.
+
+## 🧪 Testing
+
+# To run tests, navigate to the project root and execute:
+```scala
+sbt test
 ```
-### Project Structure & Build Instructions
-```plaintext
+## 📚 Project Structure & Build Instructions
+```scala
 MatrixDSL/
  ├─ src/
  │   └─ main/scala/MatrixDSL/
@@ -187,15 +185,23 @@ MatrixDSL/
  ├─ build.sbt                     // SBT Build Definition
  └─ README.md                     // Project Documentation
 ```
-### Build
+## 🛠️ Build Instructions
 
-Ensure you have sbt installed on your machine. Clone this repository:
+# Ensure sbt is installed:
 ```bash
 git clone https://github.com/kandjiabdou/scala-project-dsl.git
 ```
-Enter the project directory and run:
 ```bash
+cd scala-project-dsl
 sbt compile
 sbt test
 ```
 
+## 👥 Authors  
+
+ 
+- ✨ Abdou KANDJI  
+- ✨ Sami BOUALAMI    
+- ✨ Bamlak GURARA  
+- ✨ Joseph PAVLOVSCHII  
+"""
